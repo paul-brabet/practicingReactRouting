@@ -1,5 +1,5 @@
 .app {
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 
 .nav-home-container {
@@ -7,11 +7,12 @@
 }
 
 .nav {
-  background-color: burlywood;
-  width: 25%;
+  /* background-color: burlywood; */
+  /* width: 25%; */
+  margin-right: 120px;
 }
 
 .home {
-  background-color: paleturquoise;
-  width: 75%;
+  /* background-color: paleturquoise; */
+  /* width: 75%; */
 }

@@ -5,6 +5,7 @@ import Nav from './Nav'
 import Home from './Home'
 import RankListing from './RankListing'
 import NameAndDescription from './NameAndDescription'
+import Specie from './Specie'
 
 const App = (props) => {
   return (
@@ -16,6 +17,7 @@ const App = (props) => {
             <Route exact path='/' component={Home} />
             <Route path='/list/:rank' component={RankListing} />
             <Route path='/rank/:rank/:name' component={NameAndDescription} />
+            <Route path='/species/:id' component={Specie} />
           </div>
         </div>
       </Router>

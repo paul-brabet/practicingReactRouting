@@ -14,9 +14,7 @@ const SpeciesListing = (props) => {
         }
       }
     })
-    return species.map((specie, key) => {
-      return <li key={key}><Link to={`${props.match.url}/${specie.id}`}>{specie.name}</Link></li>
-    })
+    return species
   }
 
   return (
@@ -24,10 +22,11 @@ const SpeciesListing = (props) => {
       <div>
         <h2>Species</h2>
         <ul>
-          {relevantSpecies()}
+          {relevantSpecies().map((specie, key) => {
+            return <li key={key}><Link to={`/species/${specie.id}`}>{specie.name}</Link></li>
+            })}
         </ul>
       </div>
-      <Route path='/rank/:rank/:name/species/:id' component={Specie} />
     </router>
   )
 }
