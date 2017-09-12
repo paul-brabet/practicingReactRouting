@@ -1,0 +1,17 @@
+.app {
+  background-color: tomato;
+}
+
+.nav-home-container {
+  display: flex;
+}
+
+.nav {
+  background-color: burlywood;
+  width: 25%;
+}
+
+.home {
+  background-color: paleturquoise;
+  width: 75%;
+}
